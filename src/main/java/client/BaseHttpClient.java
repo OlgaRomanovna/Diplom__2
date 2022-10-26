@@ -57,14 +57,14 @@ public class BaseHttpClient {
                 .patch(url);
     }
 
-    @Step("send GET ")
+    @Step("send GET")
     protected Response doGetRequest(String url) {
         return given().config(config)
                 .header("Content-Type", JSON)
                 .get(url);
     }
 
-    @Step("send GET ")
+    @Step("send GET")
     protected Response doGetRequest(String url, String accessToken) {
         return given().config(config)
                 .header("Content-Type", JSON)

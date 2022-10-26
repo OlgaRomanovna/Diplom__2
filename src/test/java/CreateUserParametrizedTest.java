@@ -24,7 +24,7 @@ public class CreateUserParametrizedTest {
         this.errorMessage = errorMessage;
     }
 
-    @Parameterized.Parameters
+    @Parameterized.Parameters(name = "{index}: sort[{0}]={1}")
     public static Object[][] dataForTest() {
         return new Object[][]{
                 {"", "yeeevc", "fjeeeeh", "Email, password and name are required fields"},
